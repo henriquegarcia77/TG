@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center justify-center h-full w-full">
-  <div class="flex items-center justify-center p-3">
-      <ngb-carousel class="w-2/4 rounded-lg">
+  <div class="items-center justify-center p-3  hidden sm:flex">
+      <ngb-carousel class="w-1/4 sm:w-1/3 rounded-lg">
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
             <img [src]="images[0]" alt="Random first slide" />
@@ -27,18 +27,18 @@
   
     <div class="flex items-center justify-center flex-col">
       <h4 class="w-1/2">Voz do Cidadão</h4>
-      <div class="flex flex-row h-full w-1/2">
+      <div class="flex flex-row h-1 w-1/2">
         <span class="border-solid border-2 border-primary-color w-8"></span>
         <span class="border-solid border-2 border-black w-full"></span>
       </div>
   
-      <div class="m-4 p-4  rounded-md text-white bg-primary-color flex flex-col text-center items-center justify-center">
+      <div class="m-4 p-4 h-1/2 sm:h-1/2 rounded-md text-white bg-primary-color flex flex-col text-center items-center justify-center">
         <div class="card-body">
-          <h4 class="card-title font-bold">Sugira um Projeto ou Denúncia algum problema</h4>
-          <h6 class="card-content font-medium">Este é o espaço para o cidadão que quer ajudar a melhorar ainda mais a
+          <h4 class="card-title font-bold text-sm">Sugira um Projeto ou Denúncia algum problema</h4>
+          <h6 class="card-content hidden font-medium sm:block">Este é o espaço para o cidadão que quer ajudar a melhorar ainda mais a
             cidade de Pompeia.</h6>
         </div>
-        <a href="/sugestao" class="w-1/4 rounded-md p-2 m-2 font-bold no-underline bg-primary-color-hover text-white">Sugira um
+        <a href="/new-report" class="w-10/12 sm:w-1/4  rounded-md p-1 m-1 font-bold no-underline bg-primary-color-hover text-white">Sugira um
           Projeto</a>
       </div>
     </div>
